@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Dream Garden NoteのWeb絵本サイト。静かな森のAI画像と短い物語を、ページをめくるように読める絵本体験です。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dream Garden Note" />
+    <meta property="og:title" content="Dream Garden Note | 蛍は森のナイトライト" />
+    <meta
+      property="og:description"
+      content="静かな夜の森をめくる、小さなWeb絵本。"
+    />
+    <meta property="og:image" content="./assets/stories/010/scene-01.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Dream Garden Note | 蛍は森のナイトライト</title>
+    <link rel="preload" as="image" href="./assets/stories/010/scene-01.jpg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"
+    ></script>
+    <script src="./data/stories.js" defer></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <canvas id="firefly-layer" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Dream Garden Note ホーム">
+        <span class="brand-mark">DGN</span>
+        <span>Dream Garden Note</span>
+      </a>
+      <nav class="site-nav" aria-label="主要ナビゲーション">
+        <a href="#home" data-nav-link="home">Home</a>
+        <a href="#stories" data-nav-link="stories">Stories</a>
+        <a href="#reader" data-nav-link="reader">Read</a>
+        <a
+          href="https://www.instagram.com/dream_garden_note/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <section id="home" class="site-view home-view" data-view="home" aria-labelledby="home-title">
+        <div class="home-visual" data-home-visual aria-hidden="true"></div>
+        <div class="home-copy">
+          <p class="series">Dream Garden Note</p>
+          <h1 id="home-title" data-home-title></h1>
+          <p data-home-copy></p>
+          <div class="home-actions" aria-label="主要導線">
+            <a class="primary-link" data-home-read-link href="#reader">絵本を読む</a>
+            <a class="secondary-link" href="#stories">作品一覧</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="stories" class="site-view stories-view" data-view="stories" aria-labelledby="stories-title" hidden>
+        <div class="section-heading">
+          <p class="series">Stories</p>
+          <h2 id="stories-title">作品一覧</h2>
+          <p>
+            森の中で生まれる小さな物語を、1冊ずつめくるように読めます。
+          </p>
+        </div>
+
+        <div class="story-grid" data-story-grid></div>
+      </section>
+
+      <section id="reader" class="site-view reader-view" data-view="reader" aria-labelledby="story-title" hidden>
+        <div class="reader-shell">
+          <section class="reader-intro" aria-labelledby="story-title">
+            <p class="series">Dream Garden Note</p>
+            <h2 id="story-title" data-reader-title></h2>
+            <p data-reader-description></p>
+          </section>
+
+          <section class="reader-stage" aria-label="ページめくり絵本">
+            <div class="book-shadow" aria-hidden="true"></div>
+            <div id="book-root" class="book-root" data-engine="loading" data-prefer-stpageflip="false"></div>
+            <div id="fallback-turn" class="fallback-turn" aria-hidden="true"></div>
+          </section>
+
+          <section class="reader-controls" aria-label="ページ操作">
+            <button id="prev-page" type="button" aria-label="前のページへ">前へ</button>
+            <div class="progress" aria-live="polite">
+              <span id="page-label">表紙</span>
+              <span id="page-progress">1 / 6</span>
+            </div>
+            <button id="next-page" type="button" aria-label="次のページへ">次へ</button>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
