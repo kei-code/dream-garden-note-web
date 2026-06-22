@@ -260,7 +260,7 @@ function createImagePage(scene) {
 
 function createTextPage(scene, pageIndex, totalPages) {
   return `
-    <article class="book-page text-page">
+    <article class="book-page text-page" data-story-id="${escapeHtml(activeStory.id)}" data-scene-id="${escapeHtml(scene.id)}">
       <div class="page-content">
         ${scene.desktopText.map((text) => `<p>${escapeHtml(text)}</p>`).join("")}
       </div>
@@ -286,12 +286,13 @@ function createCoverPage() {
 
 function createBackPage() {
   const backCover = activeStory.backCover || {};
+  const text = mode === "mobile" && backCover.mobileText ? backCover.mobileText : backCover.text;
 
   return `
     <article class="book-page back-page">
       <div class="page-content">
         <p class="page-kicker">Dream Garden Note</p>
-        <p>${escapeHtml(backCover.text)}</p>
+        <p>${escapeHtml(text || "")}</p>
       </div>
     </article>
   `;
@@ -373,7 +374,7 @@ function getStPages() {
       </article>
     `);
     pages.push(`
-      <article class="st-page">
+      <article class="st-page" data-story-id="${escapeHtml(activeStory.id)}" data-scene-id="${escapeHtml(scene.id)}">
         <div class="page-content">
           ${scene.desktopText.map((text) => `<p>${escapeHtml(text)}</p>`).join("")}
         </div>

@@ -32,6 +32,7 @@ window.DGN_STORIES = [
       label: "裏表紙",
       title: "おやすみ、森の小さな灯り。",
       text: "蛍たちは、夜の森を明るくしすぎません。こわくないくらいに、帰り道がわかるくらいに。",
+      mobileText: "",
     },
     scenes: [
       {
@@ -95,6 +96,7 @@ window.DGN_STORIES = [
       label: "裏表紙",
       title: "光は、帰り道も覚えている。",
       text: "夜が深くなっても、蛍たちは道をなくしません。小さな光は、森の足もとにも、空の向こうにも続いていました。",
+      mobileText: "",
     },
     scenes: [
       {
@@ -149,6 +151,7 @@ window.DGN_STORIES = [
       label: "裏表紙",
       title: "雨がやむまで、もう少し。",
       text: "カップの底に残ったぬくもりは、雨上がりの森へ出ていく小さな勇気になりました。",
+      mobileText: "",
     },
     scenes: [
       {
@@ -203,6 +206,7 @@ window.DGN_STORIES = [
       label: "裏表紙",
       title: "ゆっくりでも、ちゃんと届く。",
       text: "雨があがるころ、森には小さな虹がかかりました。手紙にこめた想いは、足あとよりもまっすぐに届いていました。",
+      mobileText: "",
     },
     scenes: [
       {
@@ -231,6 +235,61 @@ window.DGN_STORIES = [
         title: "雨上がりの返事",
         desktopText: ["配達を終えるころ、雲の切れ間から光が差し込みました。水たまりには、紫陽花と空と、小さな虹が映っています。", "郵便屋さんは顔を上げ、雨上がりの森を見つめました。今日届けた手紙も、きっと誰かの心に虹をかけているはずです。"],
         mobileText: "配達が終わるころ、森に虹がかかりました。小さな手紙は、誰かの心にも光を届けています。",
+      }
+    ],
+  },
+  {
+    id: "006",
+    no: "006",
+    status: "published",
+    title: "葉っぱ傘の工房",
+    titleLines: ["葉っぱ傘の", "工房"],
+    description: "雨の森で、手作りの葉っぱ傘が生まれるWeb絵本です。",
+    listDescription: "動物たちが森の工房で葉っぱ傘を作り、雨の日のお客さんへ届ける短い絵本。",
+    heroCopy: "雨の日が近づく森の工房。小さな職人たちは、葉っぱを選び、柄を結び、濡れない傘をひとつずつ仕上げていきます。",
+    tags: ["葉っぱ傘", "森の工房", "雨支度"],
+    heroImage: "./assets/stories/006/scene-01.jpg",
+    ogImage: "./assets/stories/006/scene-01.jpg",
+    bookMaterials: {
+      coverImage: "./assets/book-materials/story-006/dream-garden-note-leaf-umbrella-workshop-cover.jpg",
+      backCoverImage: "./assets/book-materials/story-006/dream-garden-note-leaf-umbrella-workshop-back-cover.jpg",
+    },
+    cover: {
+      label: "表紙",
+    },
+    backCover: {
+      label: "裏表紙",
+      title: "雨の日が、少し楽しみになる。",
+      text: "葉っぱのかさは、\n雨の森を 歩くための\n小さな ともだち。\n\nぽつぽつ 雨の日も、\nかさを ひらけば\nにこにこ 歩けます。\n\nあしたの雨も、\nきっと たのしくなります。",
+      mobileText: "葉っぱのかさは、\n雨の森の\n小さな ともだち。\n\nぽつぽつ 雨の日も、\nにこにこ 歩けます。",
+    },
+    scenes: [
+      {
+        id: "scene-01",
+        number: "1",
+        image: "./assets/stories/006/scene-01.jpg",
+        alt: "木のうろの工房で、動物たちが葉っぱ傘を手作りしている",
+        title: "葉っぱを選ぶ朝",
+        desktopText: ["あめの においが、もりに 近づいてきました。\n\n大きな木の中の 工房で、\nどうぶつたちが 葉っぱのかさを 作っています。", "リスは 葉っぱを そろえ、ウサギは えだを\nきゅっ、きゅっと むすびます。\n\n今日は、あめの日のじゅんびで、\n工房は おおいそがしです。"],
+        mobileText: "あめの においが、\nもりに 近づいてきました。\n\n大きな木の中の 工房で、\nどうぶつたちが\n葉っぱのかさを 作っています。\n\n今日は、あめの日のじゅんびで、\n工房は おおいそがしです。",
+      },
+      {
+        id: "scene-02",
+        number: "2",
+        image: "./assets/stories/006/scene-02.jpg",
+        alt: "雨の森のきのこ屋根のお店に、動物たちが葉っぱ傘を買いに来ている",
+        title: "雨の日の開店",
+        desktopText: ["ひるすぎ、きのこの屋根の お店に\nぽっと あかりが つきました。\n\nぽつぽつ、ぱらぱら。\nあめが 屋根を たたきます。", "どうぶつたちに、葉っぱのかさを\nひとつずつ 手わたします。\n\n「あなたには、この色が\nよく にあいますよ」\n\nみんなは かさを ひらいて、\n雨の中へ 歩いていきました。"],
+        mobileText: "ぽつぽつ、ぱらぱら。\nあめが 屋根を たたきます。\n\nどうぶつたちに、\n葉っぱのかさを\nひとつずつ 手わたします。\n\n「あなたには、この色が\nよく にあいますよ」",
+      },
+      {
+        id: "scene-03",
+        number: "3",
+        image: "./assets/stories/006/scene-03.jpg",
+        alt: "葉っぱ傘を枝に干した工房の前で、動物たちがお茶を飲んでいる",
+        title: "雨上がりのお茶時間",
+        desktopText: ["あめが あがるころ、\nさいごのかさを 手わたしました。\n\n工房のまえでは、葉っぱのかさが\nしずくを ぽとん、ぽとん。", "「きょうも、よく がんばったね」\n\nどうぶつたちは、\nあたたかい こうちゃを\nゆっくり のみました。\n\nあしたも きっと、\nだれかの かさを 作ります。"],
+        mobileText: "あめが あがるころ、\nさいごの かさを\n手わたしました。\n\n「きょうも、よく がんばったね」\n\nあたたかい こうちゃを\nゆっくり のみました。",
       }
     ],
   }

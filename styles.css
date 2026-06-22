@@ -605,6 +605,11 @@ h1 {
   padding: clamp(40px, 5.2vw, 78px);
 }
 
+.text-page {
+  padding-right: clamp(34px, 4.7vw, 68px);
+  padding-left: clamp(34px, 4.7vw, 68px);
+}
+
 .text-page,
 .back-page {
   border-radius: 0 var(--book-radius) var(--book-radius) 0;
@@ -791,6 +796,7 @@ h2 {
   font-size: clamp(16px, 1.45vw, 19px);
   line-height: 2.04;
   letter-spacing: 0.05em;
+  white-space: pre-line;
 }
 
 .cover-page p:not(.page-kicker),
@@ -801,6 +807,18 @@ h2 {
 
 .text-page .page-content p:first-child {
   margin-top: 0;
+}
+
+.text-page p:not(.page-number):not(.page-count) {
+  font-size: clamp(15px, 1.32vw, 18px);
+  line-height: 1.96;
+  letter-spacing: 0.04em;
+}
+
+.text-page[data-story-id="006"][data-scene-id="scene-01"] p:not(.page-number):not(.page-count),
+.text-page[data-story-id="006"][data-scene-id="scene-02"] p:not(.page-number):not(.page-count),
+.text-page[data-story-id="006"][data-scene-id="scene-03"] p:not(.page-number):not(.page-count) {
+  font-size: clamp(14px, 1.22vw, 17px);
 }
 
 .page-count {
@@ -1158,6 +1176,7 @@ h2 {
   font-size: 15px;
   line-height: 1.78;
   letter-spacing: 0.05em;
+  white-space: pre-line;
 }
 
 .mobile-page-count {
@@ -1295,6 +1314,15 @@ h2 {
 
 .st-page .page-content {
   padding: 58px;
+}
+
+.st-page[data-story-id="006"][data-scene-id="scene-01"] .page-content p,
+.st-page[data-story-id="006"][data-scene-id="scene-02"] .page-content p,
+.st-page[data-story-id="006"][data-scene-id="scene-03"] .page-content p {
+  font-size: clamp(14px, 1.22vw, 17px);
+  line-height: 1.96;
+  letter-spacing: 0.04em;
+  white-space: pre-line;
 }
 
 .st-image {
