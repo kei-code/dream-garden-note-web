@@ -690,7 +690,7 @@ h1 {
 }
 
 .mobile-scene img {
-  object-position: center 42%;
+  object-position: center 48%;
 }
 
 .image-page::after,
@@ -1158,7 +1158,7 @@ h2 {
   bottom: 0;
   left: 0;
   z-index: 5;
-  padding: 48px 24px 52px;
+  padding: 48px 24px 44px;
   color: var(--paper);
   background: linear-gradient(180deg, transparent, rgba(4, 10, 8, 0.54) 44%, rgba(4, 10, 8, 0.78));
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.76);
@@ -1537,7 +1537,7 @@ h2 {
   }
 
   .mobile-scene .mobile-copy {
-    padding: 44px 20px 50px;
+    padding: 44px 20px 42px;
   }
 
   .mobile-copy h2 {
