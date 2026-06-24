@@ -122,10 +122,15 @@ function updateBookMetrics() {
   const root = document.documentElement;
 
   if (getMode() === "mobile") {
-    const maxWidth = Math.min(window.innerWidth - 12, 560);
-    const maxHeight = Math.max(360, window.innerHeight - 68);
-    const pageWidth = Math.max(260, Math.min(maxWidth, maxHeight * originalImageRatio));
-    const pageHeight = pageWidth / originalImageRatio;
+    const mobileTextRatio = 0.22;
+    const maxWidth = Math.min(window.innerWidth, 560);
+    const maxHeight = Math.max(420, window.innerHeight - 64);
+    const pageWidth = Math.max(
+      260,
+      Math.min(maxWidth, maxHeight * (1 - mobileTextRatio) * originalImageRatio),
+    );
+    const imageHeight = pageWidth / originalImageRatio;
+    const pageHeight = imageHeight / (1 - mobileTextRatio);
 
     root.style.setProperty("--page-width", `${pageWidth.toFixed(2)}px`);
     root.style.setProperty("--page-height", `${pageHeight.toFixed(2)}px`);
