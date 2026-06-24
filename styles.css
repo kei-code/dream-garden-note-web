@@ -690,11 +690,17 @@ h1 {
 }
 
 .mobile-scene img {
+  position: relative;
+  z-index: 1;
+  inset: auto;
+  display: block;
+  flex: 1 1 68%;
+  height: 68%;
+  min-height: 0;
   object-position: center 48%;
 }
 
 .image-page::after,
-.mobile-scene::after,
 .st-image::after {
   position: absolute;
   inset: 0;
@@ -1143,6 +1149,8 @@ h2 {
 
 .mobile-scene {
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: var(--page-width);
   height: var(--page-height);
   min-height: 0;
@@ -1153,15 +1161,23 @@ h2 {
 }
 
 .mobile-scene .mobile-copy {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  display: flex;
+  flex: 0 0 32%;
+  flex-direction: column;
+  justify-content: center;
   z-index: 5;
-  padding: 48px 24px 44px;
-  color: var(--paper);
-  background: linear-gradient(180deg, transparent, rgba(4, 10, 8, 0.54) 44%, rgba(4, 10, 8, 0.78));
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.76);
+  min-height: 0;
+  padding: 20px 24px 24px;
+  color: #3a2d1f;
+  background:
+    var(--book-paper-texture),
+    linear-gradient(180deg, rgba(248, 238, 211, 0.96), rgba(235, 219, 181, 0.98));
+  background-size:
+    420px 420px,
+    auto;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.52);
+  text-shadow: none;
 }
 
 .mobile-copy .page-number {
@@ -1176,7 +1192,7 @@ h2 {
 
 .mobile-copy p {
   margin: 0;
-  color: rgba(247, 237, 211, 0.86);
+  color: rgba(58, 45, 31, 0.88);
   font-size: clamp(14px, 3.55vw, 15px);
   line-height: 1.68;
   letter-spacing: 0.04em;
@@ -1184,17 +1200,16 @@ h2 {
 }
 
 .mobile-page-count {
-  position: absolute;
-  right: 22px;
-  bottom: 22px;
+  position: static;
+  align-self: flex-end;
   z-index: 7;
-  margin: 0;
-  color: rgba(247, 237, 211, 0.48);
+  margin: 12px 0 0;
+  color: rgba(87, 67, 43, 0.58);
   font-family:
     "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif;
   font-size: 11px;
   letter-spacing: 0.16em;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.72);
+  text-shadow: none;
 }
 
 .reader-controls {
@@ -1537,7 +1552,8 @@ h2 {
   }
 
   .mobile-scene .mobile-copy {
-    padding: 44px 20px 42px;
+    flex-basis: 34%;
+    padding: 18px 20px 22px;
   }
 
   .mobile-copy h2 {
@@ -1550,8 +1566,7 @@ h2 {
   }
 
   .mobile-page-count {
-    right: 20px;
-    bottom: 20px;
+    margin-top: 10px;
   }
 }
 

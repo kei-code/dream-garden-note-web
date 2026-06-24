@@ -304,8 +304,8 @@ function createMobileScene(scene, pageIndex, totalPages) {
       <img src="${scene.image}" alt="${escapeHtml(scene.alt)}" />
       <div class="mobile-copy">
         <p>${escapeHtml(scene.mobileText)}</p>
+        <p class="mobile-page-count">${pageIndex} / ${totalPages}</p>
       </div>
-      <p class="mobile-page-count">${pageIndex} / ${totalPages}</p>
     </article>
   `;
 }
