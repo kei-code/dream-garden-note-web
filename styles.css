@@ -702,6 +702,8 @@ h1 {
   min-height: 0;
   object-fit: contain;
   object-position: center 48%;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 95%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 95%, transparent 100%);
 }
 
 .image-page::after,
@@ -1176,6 +1178,7 @@ h2 {
   background: transparent;
   box-shadow: none;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  transform: translateY(-8px);
 }
 
 .mobile-copy .page-number {
