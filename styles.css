@@ -694,9 +694,13 @@ h1 {
   z-index: 1;
   inset: auto;
   display: block;
-  flex: 1 1 68%;
-  height: 68%;
+  align-self: center;
+  flex: 1 1 70%;
+  width: auto;
+  height: 70%;
+  max-width: 100%;
   min-height: 0;
+  object-fit: contain;
   object-position: center 48%;
 }
 
@@ -1163,12 +1167,12 @@ h2 {
 .mobile-scene .mobile-copy {
   position: relative;
   display: flex;
-  flex: 0 0 32%;
+  flex: 0 0 30%;
   flex-direction: column;
   justify-content: center;
   z-index: 5;
   min-height: 0;
-  padding: 20px 24px 24px;
+  padding: 14px 24px 16px;
   color: #3a2d1f;
   background:
     var(--book-paper-texture),
@@ -1199,15 +1203,16 @@ h2 {
   white-space: pre-line;
 }
 
-.mobile-page-count {
+.mobile-copy .mobile-page-count {
   position: static;
   align-self: flex-end;
   z-index: 7;
-  margin: 12px 0 0;
+  margin: 6px 0 0;
   color: rgba(87, 67, 43, 0.58);
   font-family:
     "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif;
-  font-size: 11px;
+  font-size: 9px;
+  line-height: 1.35;
   letter-spacing: 0.16em;
   text-shadow: none;
 }
@@ -1552,8 +1557,8 @@ h2 {
   }
 
   .mobile-scene .mobile-copy {
-    flex-basis: 34%;
-    padding: 18px 20px 22px;
+    flex-basis: 30%;
+    padding: 14px 20px 16px;
   }
 
   .mobile-copy h2 {
@@ -1565,8 +1570,8 @@ h2 {
     line-height: 1.66;
   }
 
-  .mobile-page-count {
-    margin-top: 10px;
+  .mobile-copy .mobile-page-count {
+    margin-top: 4px;
   }
 }
 
