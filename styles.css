@@ -702,8 +702,8 @@ h1 {
   min-height: 0;
   object-fit: contain;
   object-position: center 48%;
-  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 95%, transparent 100%);
-  mask-image: linear-gradient(to bottom, #000 0%, #000 95%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 90%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 90%, transparent 100%);
 }
 
 .image-page::after,
@@ -1161,7 +1161,7 @@ h2 {
   min-height: 0;
   overflow: hidden;
   border-radius: var(--book-radius);
-  background: #07100d;
+  background: transparent;
   box-shadow: 0 34px 78px rgba(0, 0, 0, 0.52);
 }
 
@@ -1175,10 +1175,10 @@ h2 {
   min-height: 0;
   padding: 10px 24px 12px;
   color: rgba(255, 255, 255, 0.92);
-  background: transparent;
+  background: none;
   box-shadow: none;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
-  transform: translateY(-8px);
+  transform: translateY(-14px);
 }
 
 .mobile-copy .page-number {
