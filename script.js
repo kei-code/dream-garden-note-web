@@ -225,7 +225,12 @@ function renderStoryList() {
       const loading = index === 0 ? "eager" : "lazy";
 
       return `
-        <a class="story-card" href="#reader/${escapeHtml(storyItem.id)}" aria-label="${escapeHtml(storyItem.title)}を読む">
+        <a
+          class="story-card"
+          href="#reader/${escapeHtml(storyItem.id)}"
+          data-story-id="${escapeHtml(storyItem.id)}"
+          aria-label="${escapeHtml(storyItem.title)}を読む"
+        >
           <figure>
             <img
               src="${escapeHtml(image)}"

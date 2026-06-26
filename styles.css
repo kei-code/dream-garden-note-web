@@ -360,6 +360,44 @@ button {
   object-fit: cover;
 }
 
+.story-card[data-story-id="006"] {
+  aspect-ratio: 1 / 1.618;
+  grid-template-rows: 72% minmax(0, 28%);
+}
+
+.story-card[data-story-id="006"] figure {
+  height: 100%;
+  min-height: 0;
+  aspect-ratio: auto;
+}
+
+.story-card[data-story-id="006"] .story-card-copy {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  padding: 16px 18px 14px;
+}
+
+.story-card[data-story-id="006"] h3 {
+  font-size: clamp(20px, 1.8vw, 24px);
+  line-height: 1.28;
+}
+
+.story-card[data-story-id="006"] .story-card-copy p:not(.story-index) {
+  display: -webkit-box;
+  margin-top: 8px;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 1.52;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.story-card[data-story-id="006"] .story-tags {
+  margin-top: auto;
+  padding-top: 10px;
+}
+
 .story-card-copy {
   padding: 22px 22px 24px;
 }
