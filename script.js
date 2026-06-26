@@ -9,7 +9,6 @@ const validViews = new Set(views.map((view) => view.dataset.view));
 const homeVisual = document.querySelector("[data-home-visual]");
 const homeTitle = document.querySelector("[data-home-title]");
 const homeCopy = document.querySelector("[data-home-copy]");
-const homeReadLink = document.querySelector("[data-home-read-link]");
 const storyGrid = document.querySelector("[data-story-grid]");
 const readerTitle = document.querySelector("[data-reader-title]");
 const readerDescription = document.querySelector("[data-reader-description]");
@@ -211,7 +210,6 @@ function renderHome() {
     .map((line) => escapeHtml(line))
     .join("<br />");
   homeCopy.textContent = featuredStory.heroCopy || featuredStory.description || "";
-  homeReadLink.href = `#reader/${featuredStory.id}`;
   updateMeta(featuredStory);
 }
 
