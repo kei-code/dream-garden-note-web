@@ -1494,6 +1494,12 @@ h2 {
     perspective: 760px;
   }
 
+  .fallback-turn.is-mobile .turn-face {
+    background: transparent;
+    background-image: none;
+    box-shadow: none;
+  }
+
   .fallback-turn.is-mobile.is-next .turn-page {
     animation: mobilePageTurnNext var(--turn-time) cubic-bezier(0.24, 0.78, 0.22, 1) forwards;
   }
