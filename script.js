@@ -218,8 +218,12 @@ function renderStoryList() {
 
   storyGrid.innerHTML = publishedStories
     .map((storyItem, index) => {
-      const tags = (storyItem.tags || [])
-        .map((tag) => `<li>${escapeHtml(tag)}</li>`)
+      const tags = [
+        storyItem.season ? { type: "season", text: storyItem.season } : null,
+        storyItem.month ? { type: "month", text: storyItem.month } : null,
+      ]
+        .filter(Boolean)
+        .map((tag) => `<li class="story-tag story-tag-${tag.type}">${escapeHtml(tag.text)}</li>`)
         .join("");
       const image = getPrimaryImage(storyItem);
       const loading = index === 0 ? "eager" : "lazy";
