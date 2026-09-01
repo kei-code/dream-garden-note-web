@@ -301,7 +301,7 @@ function createBackPage() {
   const text = mode === "mobile" && backCover.mobileText ? backCover.mobileText : backCover.text;
 
   return `
-    <article class="book-page back-page">
+    <article class="book-page back-page" data-story-id="${escapeHtml(activeStory.id)}">
       <div class="page-content">
         <p class="page-kicker">Dream Garden Note</p>
         <p>${escapeHtml(text || "")}</p>
