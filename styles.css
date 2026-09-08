@@ -874,6 +874,17 @@ h2 {
   font-size: clamp(14px, 1.22vw, 17px);
 }
 
+.text-page[data-story-id="009"] p:not(.page-number):not(.page-count) {
+  font-size: 16px;
+  letter-spacing: 0;
+  text-wrap: pretty;
+}
+
+.back-page[data-story-id="009"] p:not(.page-kicker) {
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
 .page-count {
   position: absolute;
   right: clamp(30px, 4vw, 58px);

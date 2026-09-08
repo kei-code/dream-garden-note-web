@@ -425,5 +425,62 @@ window.DGN_STORIES = [
         mobileText: "ぱちぱちぱち！\n音楽会は おしまい。\nみんなで なかよく ひと休みです。",
       }
     ],
+  },
+  {
+    id: "009",
+    no: "009",
+    status: "published",
+    title: "森の てるてるぼうず",
+    titleLines: ["森の", "てるてるぼうず"],
+    description: "ねずみさんとくもさんが、森のみんなのためにてるてるぼうずを作るWeb絵本です。",
+    listDescription: "ねずみさんとくもさんが作ったてるてるぼうずを、森のみんなで見上げるお話。",
+    heroCopy: "白いぬのをくるり、いとをきゅっ。小さなふたりが作ったてるてるぼうずが、木もれ日の森に並びます。",
+    season: "夏",
+    month: "6月",
+    tags: ["梅雨", "てるてるぼうず", "手づくり"],
+    heroImage: "./assets/stories/009/scene-01.jpg",
+    ogImage: "./assets/stories/009/scene-01.jpg",
+    bookMaterials: {
+      coverImage: "./assets/book-materials/story-009/dream-garden-note-forest-teru-teru-bozu-cover.jpg",
+      backCoverImage: "./assets/book-materials/story-009/dream-garden-note-forest-teru-teru-bozu-back-cover.jpg",
+    },
+    cover: {
+      label: "表紙",
+    },
+    backCover: {
+      label: "裏表紙",
+      title: "",
+      text: "てるてるぼうずが ゆらゆらり。\nあしたも はれますように。",
+      mobileText: "てるてるぼうずが ゆらゆらり。\nあしたも はれますように。",
+    },
+    scenes: [
+      {
+        id: "scene-01",
+        number: "1",
+        image: "./assets/stories/009/scene-01.jpg",
+        alt: "木もれ日の森で、めがねをかけたねずみと黄色いくもが、白いぬのといとでてるてるぼうずを作っている",
+        title: "ふたりで、てづくり",
+        desktopText: ["ねずみさんが 白いぬのを くるり。\nくもさんが いとを きゅっと むすびます。", "にっこり おかおを つけたら、\n小さな てるてるぼうずの できあがり。"],
+        mobileText: "白いぬのを くるり。\nいとを きゅっ。\nふたりで てるてるぼうずを つくります。",
+      },
+      {
+        id: "scene-02",
+        number: "2",
+        image: "./assets/stories/009/scene-02.jpg",
+        alt: "枝にたくさん並んだてるてるぼうずを、ねずみと黄色いくもが笑顔で見上げている",
+        title: "たくさん、できたね",
+        desktopText: ["ひとつ、ふたつ、また ひとつ。\nえだに ならんだ てるてるぼうずが、\nそよそよ風に ゆれています。", "「たくさん できたね」\nふたりは 見上げて、にっこり。"],
+        mobileText: "ひとつ、ふたつ、また ひとつ。\n「たくさん できたね」\nふたりも にっこり。",
+      },
+      {
+        id: "scene-03",
+        number: "3",
+        image: "./assets/stories/009/scene-03.jpg",
+        alt: "木もれ日がさす森で、枝につるされたてるてるぼうずを、しかやうさぎなどの動物たちが見上げている",
+        title: "あしたも、はれますように",
+        desktopText: ["森のあちこちに かざると、\nどうぶつたちが あつまってきました。", "「あしたも みんなで あそぼうね」\n木もれ日の下で、てるてるぼうずも\nうれしそうに ゆれていました。"],
+        mobileText: "「あしたも みんなで あそぼうね」\nてるてるぼうずの下で、\n森のみんなも にっこり。",
+      }
+    ],
   }
 ];
