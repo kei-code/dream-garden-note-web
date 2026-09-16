@@ -1279,6 +1279,7 @@ h2 {
   display: grid;
   width: 58px;
   height: 92px;
+  padding: 0;
   place-items: center;
   border: 1px solid rgba(241, 201, 95, 0.36);
   border-radius: 999px;
@@ -1304,16 +1305,22 @@ h2 {
 }
 
 .reader-controls button::before {
-  font-size: 34px;
-  line-height: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 18px;
+  background: currentColor;
+  content: "";
+  transform: translate(-50%, -50%);
 }
 
 #prev-page::before {
-  content: "\2039";
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
 }
 
 #next-page::before {
-  content: "\203A";
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 
 #prev-page {
