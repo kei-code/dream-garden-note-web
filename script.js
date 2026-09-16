@@ -214,7 +214,14 @@ function renderHome() {
 }
 
 function renderStoryList() {
-  const publishedStories = stories.filter((storyItem) => storyItem.status === "published");
+  const publishedStories = stories
+    .filter((storyItem) => storyItem.status === "published")
+    .sort((storyA, storyB) =>
+      String(storyB.id).localeCompare(String(storyA.id), "ja", {
+        numeric: true,
+        sensitivity: "base",
+      }),
+    );
 
   storyGrid.innerHTML = publishedStories
     .map((storyItem, index) => {
